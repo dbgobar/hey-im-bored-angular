@@ -11,6 +11,12 @@ function RouterFunction($stateProvider) {
       controller: "IndexController",
       controllerAs: "vm"
     })
+    .state("show", {
+      url: "/events",
+      templateUrl: "/js/ng-views/show.html",
+      controller: "ShowController",
+      controllerAs: "vm"
+    })
 }
 
 function IndexControllerFunction($scope) {
@@ -20,13 +26,14 @@ function IndexControllerFunction($scope) {
   //       $state.go("index")
   //     })
   //   }
+
   $scope.categories = [
-    'music',
-    'comedy',
-    'sports',
-    'arts',
-    'food',
-    'family'
+    'Music',
+    'Comedy',
+    'Sports',
+    'Arts',
+    'Food',
+    'Family'
   ];
   $scope.postal_code = []
 
@@ -37,5 +44,9 @@ function IndexControllerFunction($scope) {
 
 this.create = function(user){
   console.log(user)
+  }
 }
-}
+
+function ShowControllerFunction(){
+  
+  }
