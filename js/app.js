@@ -14,7 +14,7 @@ angular
   ])
 
   function EventFactoryFunction($resource) {
-    return $resource("http://localhost:4001/api/events", {}, {
+    return $resource("https://dbgobar.github.io/hey-im-bored-angular/", {}, {
       update: {method: "PUT"}
     })
   }
