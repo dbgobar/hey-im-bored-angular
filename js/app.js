@@ -27,6 +27,7 @@ function RouterFunction($stateProvider) {
       controller: "IndexController",
       controllerAs: "vm"
     })
+
     .state("show",{
       url: "/events/:id",
       templateUrl: "/js/ng-views/show.html",
@@ -34,6 +35,7 @@ function RouterFunction($stateProvider) {
       controllerAs: "vm"
     })
 }
+
 
 function IndexControllerFunction($scope, $state, $http, EventFactory, $stateParams) {
 
@@ -47,12 +49,14 @@ function IndexControllerFunction($scope, $state, $http, EventFactory, $statePara
     'family_fun_kids'
   ];
 
+
   $scope.postal_code = []
 
   $scope.user = {
     categories: [],
     postal_code: []
   };
+
 
   $scope.clicked = false;
 
@@ -99,5 +103,6 @@ function ShowControllerFunction($scope, EventFactory, $state) {
   this.reset = function(){
     console.log("Empty entire UserEvents collection")
   }
+
 
 }

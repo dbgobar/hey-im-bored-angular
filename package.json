@@ -15,7 +15,8 @@
 
     "url": "git+https://github.com/donovanallen/hey-im-bored-angular.git",
 
-    "url": "git+https://github.com/julietberman/hey-im-bored-angular.git"
+    "url": "git+https://github.com/julietberman/hey-im-bored-angular.git",
+    "url": "git+https://github.com/dbgobar/hey-im-bored-angular.git"
   },
   "author": "",
   "license": "ISC",
@@ -28,4 +29,5 @@
     "url": "https://github.com/julietberman/hey-im-bored-angular/issues"
   },
   "homepage": "https://github.com/julietberman/hey-im-bored-angular#readme"
+
 }
