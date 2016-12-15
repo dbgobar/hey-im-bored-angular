@@ -14,7 +14,7 @@ angular
   ])
 
   function EventFactoryFunction($resource) {
-    return $resource("https://dbgobar.github.io/hey-im-bored-angular/", {}, {
+    return $resource("http://frozen-cove-33468.herokuapp.com/api/events", {}, {
       update: {method: "PUT"}
     })
   }
